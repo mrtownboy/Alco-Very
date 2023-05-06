@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+a {
+  text-decoration: none !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h5 {
+  margin: 0;
+}
+/* ====HomePage==== */
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+}
+/* ====Header==== */
+.header-wrap {
+  display: flex;
+  background-color: #2d2d2d;
+}
+
+.header-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1 1 30%;
+}
+select {
+  border: none;
+}
+.header-logo {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  flex: 1;
+}
+
+/* ====navBar==== */
+.navbar-wrap {
+  background: #2d2d2d;
+}
+.navbar-tabs {
+  display: flex;
+  list-style: none;
+  width: 67%;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 45px;
+  align-items: center;
+}
+.nav-link {
+  color: #fff !important;
+}
+.nav-link:hover {
+  color: #ffb900 !important;
+}
+li {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #708199;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+.active {
+  font-size: 1.5rem;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+/* ===main=== */
+.page-wrap {
+  display: flex;
+}
+.pages {
+  flex: 1 1 70%;
+}
+.aside {
+  flex: 1 1 50%;
+}
+/* ===content=== */
+.homepage-content-wrap {
+  display: flex;
+  margin: 5% 3%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* CUSTOMER REVIEWS */
+.checked {
+  color: orange;
+}
+.home-page-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-left-pane {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.review-left-pane img {
+  height: 50vh;
+}
+.review-right-pane p {
+  width: 66%;
+  margin: 10px 0;
+}
+.review-right-pane {
+  flex: 1;
+  padding: 30px;
+}
+.content-left-pane {
+  flex: 1 1 50%;
+}
+.content-right-pane {
+  flex: 1 0 0;
+}
+.about-alco-very p {
+  color: #fff;
+}
+.about-alco-very img {
+  height: 500px;
+  width: 360px;
+}
+
+.about-alco-very {
+  display: flex;
+  margin-top: 20px;
+}
+.pincode {
+  margin-top: 12%;
+  padding: 14px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pincode input {
+  width: 50%;
+}
+/* ====Footer==== */
+
+.footer-wrap {
+  width: 100%;
+  background-color: #2d2d2d;
+  display: grid;
+  grid-template-areas:
+    "a a . . . b"
+    ". c c c c .";
+}
+.app-download {
+  color: #fff;
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.app-download:hover {
+  color: #ffb900;
+}
+.contact-us {
+  grid-area: b;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.copyright {
+  text-align: center;
+  grid-area: c;
+  color: #708199;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+ul li a:hover {
+  color: #ffb900;
+}
+.footer-logos img {
+  width: 119px;
+  height: 40px;
+}
+/* ===login=== */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+  gap: 30px;
+  width: 40%;
+  padding: 1% 2%;
+  border: 1px solid #e7e7e7;
+  border-radius: 1rem;
+  background-image: url("../image/Rectangle105.png"),
+    url("../image/Rectangle89.png");
+  background-position: -99px -68px, 300px 418px;
+  background-repeat: no-repeat, no-repeat;
+  min-width: 360px;
+}
+.login-with-google {
+  display: flex;
+  gap: 10px;
+}
+.google-logo,
+.facebook-logo {
+  display: flex;
+  gap: 8px;
+  color: #fff;
+  background: #165bff;
+  border-radius: 7px;
+  padding: 10px 14px;
+  align-items: center;
+  margin: 0;
+  font-size: 2rem;
+}
+.sign-in {
+  flex: 1 1 0;
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.sign-up {
+  flex: 1 1 0;
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Beer gallery styles */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin: 20px 0;
+}
+.gallery-item img {
+  width: auto;
+  height: 100%;
+  min-width: 360px;
+  max-width: 400px;
+}
+.gallery-thumbnail {
+  height: 30vh;
+}
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid;
+  box-shadow: 0px 0px 61px 32px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 0px 61px 32px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 61px 32px rgba(0, 0, 0, 0.18);
+}
+.gallery-item:hover {
+  transform: scale(1.01);
+}
+.gallery-caption {
+  margin-top: 10px;
+  text-align: center;
+}
+.page-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* carousal  */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-items {
+  flex: 0 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-prev,
+.carousel-next {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 20px;
+  color: #222;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* media */
+
+@media screen and (max-width: 1000px) {
+  .about-alco-very {
+    flex-direction: column;
+  }
+  .review-left-pane p {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .home-page-review {
+    flex-direction: column;
+  }
+  .homepage-content-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+  
+  }
+}

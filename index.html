@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="js/alcovary.js"></script>
+    <title>Alco-Very</title>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <header>
+      <nav class="navbar header-wrap">
+        <div class="container-fluid">
+          <div class="header-left">
+            <div class="header-select-wrap">
+              <select
+                class="form-select form-select-sm"
+                name="country"
+                id="country"
+              >
+                <option value="Bangor">Bangor</option>
+                <option value="London">London</option>
+                <option value="New York">New York</option>
+              </select>
+              <select
+                class="form-select form-select-sm"
+                name="language"
+                id="language"
+              >
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+            </div>
+            <div class="header-select-wrap">
+              <a href="pages/login.html">
+                <button type="button" class="btn btn-primary">
+                  Login / Register
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="header-mid">
+            <h1 class="header-logo">Alco-Very</h1>
+          </div>
+          <div class="header-right">
+            <button type="button" class="btn btn-primary btn-sm">
+              Call Us 24/7
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav class="navbar-wrap">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="pages/beer.html"
+            >Beer/Lager</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/cider.html">Cider</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/whiskey.html">Whiskey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/wine.html">Wine</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- homepage main -->
+    <section class="homepage-content-wrap">
+      <div class="content-left-pane">
+        <div class="about-alco-very">
+          <div>
+            <h3 class="title">About ALCO-VERY,</h3>
+            <p>
+              Alco-Very is a revolutionary online alcohol delivery app that
+              provides you with a hassle-free and convenient way to get your
+              favorite alcoholic beverages delivered right to your doorstep.
+              With just a few taps on your smartphone, you can browse through a
+              vast selection of beers, wines, spirits, and mixers and have them
+              delivered to your doorstep in no time.
+            </p>
+            <p>
+              The app's user-friendly interface and simple navigation make it
+              easy for customers to quickly find the products they are looking
+              for. You can easily search for your favorite brands or explore new
+              options based on your preferences. The app also provides detailed
+              product descriptions and reviews to help you make informed
+              choices.
+            </p>
+            <p>
+              With Alco-very, you can enjoy a stress-free shopping experience
+              without having to leave the comfort of your home. You can place
+              your order and pay securely within the app, and track your
+              delivery in real-time. Plus, the app offers a range of delivery
+              options, including express and same-day delivery, to ensure you
+              get your order when you need it.
+            </p>
+            <p>
+              Alco-very is not just an app for customers, but also for
+              businesses. It allows local liquor stores to expand their reach
+              and connect with more customers by offering a convenient online
+              ordering and delivery service. The app also provides business
+              owners with powerful tools to manage their inventory, process
+              orders, and track their sales.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1622726196151-bfa9875199b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2luZSUyMHNob3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="content-right-pane">
+        <div class="pincode">
+          <label for="exampleFormControlInput1" class="form-label">
+            Enter your pincode to check the service:
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter pincode"
+          />
+        </div>
+        <aside>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </aside>
+      </div>
+    </section>
+
+    <section class="home-page-review">
+      <div class="review-left-pane">
+        <img
+          src="https://cdn.shopify.com/s/files/1/1624/5203/files/review-img.png?v=1656915554"
+          alt="bottles"
+        />
+      </div>
+      <div class="review-right-pane">
+        <h1>CUSTOMER REVIEWS</h1>
+        <h5>
+          George W.
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </h5>
+        <p>
+          The best delivery services in the city. I received my order within
+          20min. I'd suggest you to go for this one. They even got best rates.
+        </p>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-wrap">
+      <div class="app-download">
+        <h4>Download our App</h4>
+        <div class="footer-logos">
+          <img
+            src="https://lh3.googleusercontent.com/q1k2l5CwMV31JdDXcpN4Ey7O43PxnjAuZBTmcHEwQxVuv_2wCE2gAAQMWxwNUC2FYEOnYgFPOpw6kmHJWuEGeIBLTj9CuxcOEeU8UXyzWJq4NJM3lg=s0"
+            alt=""
+          />
+          <img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          />
+        </div>
+      </div>
+      <div class="contact-us">
+        <ul>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Help</li>
+        </ul>
+      </div>
+      <p class="copyright">&copy;2023 Alco-Very, All rights reserved.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
